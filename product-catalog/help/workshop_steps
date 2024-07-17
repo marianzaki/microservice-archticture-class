@@ -9,9 +9,5 @@ This is for the steps to build your containarized version of your Microservice g
 8. Test your app on postman
 9. Add your unit test
 
-
-
-
-
-
-
+Hint: if you face dependency or import issue, you can run go mod tidy
+If you want to-initialize your mod.go use: go mod init product-catalog-solid
