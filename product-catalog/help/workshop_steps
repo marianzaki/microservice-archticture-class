@@ -3,12 +3,11 @@ This is for the steps to build your containarized version of your Microservice g
 2. Modify go.mod to include your dependency 
 3. Generate your go.sum  -- 
 4. Build your docker image  --  docker build -t product-catalog . 2>&1 | Tee-Object -File "docker_build.log"
-5. Start a container from the created image, and you should be able to access your Go application at http://localhost:8080 in your web browser or Postman. -- docker run -p 8080:8080 product-catalog
-
-docker run -d -p 8080:8080 --name book-store --restart always product-catalog
-docker run -d -p 8080:8080 --name book-store product-catalog
-
-docker inspect book-store | Select-String '"Ports"'
+5. Start a container from the created image, and you should be able to access your Go application at http://localhost:8080 in your web browser or Postman. -- docker run -d -p 8080:8080 --name book-store  product-catalog
+6. Start Building Your Layers
+7. Repeat steps 4 and 5
+8. Test your app on postman
+9. Add your unit test
 
 
 
