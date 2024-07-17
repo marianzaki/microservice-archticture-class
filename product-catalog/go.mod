@@ -1,6 +1,7 @@
 module github.com/marianzaki/microservice-archticture-class/product-catalog
 
 go 1.22.5
+
 require (
 	github.com/gin-gonic/gin v1.10.0
 	github.com/stretchr/testify v1.9.0
